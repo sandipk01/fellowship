@@ -49,10 +49,10 @@ do
 	if [ ${randomArr[index]} -gt $max ]
 		then
           secondMax=$max;
-          max=${randomArr[index]};
+          max=${randomArr[index]}
           	elif [ ${randomArr[index]} -gt $secondMax -a ${randomArr[index]} -ne $max ]
-		   then 
-                	secondMax = ${randomArr[index]}
+		   		then
+                	secondMax=${randomArr[index]}
 	fi
 done
 echo "smallest Number " $min "|  Largest Number"  $max
