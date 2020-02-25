@@ -36,7 +36,7 @@ do
 done
 }
 
-
+#ADDING COUNT OF DICE
 while [ $(( "$( diceRoll )" )) -lt 10 ]
 do
 	random=$(( (RANDOM%6) + 1 ))
@@ -89,3 +89,7 @@ do
 done
 
 printf "dice $index is  min $min \n"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 428369d363646661086fb20274d174803fcfa8d5
