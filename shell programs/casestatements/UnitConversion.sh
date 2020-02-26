@@ -15,34 +15,34 @@ case $value in
 	echo "---Feet to Inches Conversion---"
 	echo "Enter the value in Feet"
 	read feet
-  	#converting Feet to inch
+	#converting Feet to inch
 	inch=$(( $feet * 12 ));
 	echo $inch "inch"
 ;;
 2)
 	echo "---Feet to Meter Conversion---"
-   echo "Enter The value in Feet"
-   read feet
+	echo "Enter The value in Feet"
+	read feet
 
 	#converting feet to meter 
 
-   meter=`echo "$feet * 0.3048" | bc -l`;
-   echo $meter "meter"
+	meter=`echo "$feet * 0.3048" | bc -l`;
+	echo $meter "meter"
 ;;
 3)
 	echo "---Inch to feet Conversion---"
-   echo "Enter The Value in Inches"
+	echo "Enter The Value in Inches"
 	read inch
 
-   #converting inch to feet
-   feet=`echo "$inch * 0.0833333" | bc -l`;
-   echo $feet "feet"
+	#converting inch to feet
+	feet=`echo "$inch * 0.0833333" | bc -l`;
+	echo $feet "feet"
 ;;
 4)
 	echo "---Meter To feet Conversion---"
 	echo "Enter The value in metere"
 	read meter
-   feet=`echo " $meter * 3.28084" | bc -l `;
-   echo $feet "feet"
+	feet=`echo " $meter * 3.28084" | bc -l `;
+	echo $feet "feet"
 ;;
 esac
