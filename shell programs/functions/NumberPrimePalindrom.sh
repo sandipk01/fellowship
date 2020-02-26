@@ -21,6 +21,7 @@ do
    newNumber="$newNumber$next";
 done
 
+#CHECKING PALINDROM OR NOT
 if [ $oldNumber -eq $newNumber ]
    then
       echo "palindrom"
@@ -36,8 +37,8 @@ for (( i=2; i<=$number/2; i++ ))
 do
 	if [ $(( $number%$i )) -eq 0 ]
    	then
-			 flag=1
-			 break
+			flag=1
+			break
 	fi
 done
 
@@ -50,11 +51,9 @@ fi
 }
 
 function palindromAndPrime(){
-
 palindrom="$( palindrom )";
 prime="$( prime )";
 printf "given number is  $palindrom  |  $prime\n"
-
 }
 
 printf "$( palindromAndPrime )"
